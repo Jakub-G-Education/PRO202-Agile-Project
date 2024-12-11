@@ -1,0 +1,304 @@
+.mainContainer {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-image: url("/images/3.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 17%;
+  color: white;
+  padding: 20px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.weather {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weatherIcon {
+  font-size: 40px;
+}
+
+.temperature {
+  font-size: 30px;
+}
+
+.dateTime {
+  font-size: 20px;
+}
+
+.funSection {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+}
+
+.menu {
+  margin-top: -15%;
+  width: 220px;
+  padding: 20px;
+}
+
+.menu h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+
+.menu li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  page-break-inside: auto;
+  page-break-after: avoid;
+  list-style: none;
+}
+
+.mainContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #084682;
+  opacity: 77%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  list-style: none;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+.header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.eventDetails p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.scheduleSection {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 55%;
+}
+
+.meetings {
+  width: 22%;
+  background-color: #ffffff;
+  color: #084682;
+  opacity: 77%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.workshops {
+  background-color: #ffffff;
+  color: #084682;
+  opacity: 77%;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+}
+
+.workshopItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.workshopDateTime {
+  font-size: 16px;
+  color: #084682;
+}
+
+.workshopInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 5;
+  margin-top: 5%;
+}
+
+.images {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.qrCode {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.meetings h2,
+.workshops h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.meetings ul,
+.workshops ul {
+  list-style: none;
+  padding: 0;
+}
+
+.meetings li,
+.workshops li {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.birthdays {
+  background-color: #ffffff;
+  color: #084682;
+  opacity: 77%;
+  opacity: 77%;
+  padding: 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+  list-style: none;
+}
+
+.birthdays li {
+  list-style: none;
+}
+
+.birthdays h2 {
+  font-size: 22px;
+  color: #084682;
+  letter-spacing: 1px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.birthdayList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.birthdayMonth {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 8%;
+}
+
+.birthdayList div {
+  width: 30%;
+}
+
+.footer {
+  background-color: #6d2077;
+  color: white;
+  text-align: center;
+  padding: 0.7%;
+  border-radius: 10px;
+  list-style: none;
+}
+
+/* husk å endre mainContent lengre oppe hvis vi fjerner det under*/
+/*Alt det under skal fjernes hvis det ikke funker, det over er "ferdig" layout */
+
+.mainContent {
+  flex: 1; /* Changed from width: 75% to flex: 1 to fill remaining space */
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 25%; /* Slightly wider sidebar for better readability on smaller screens */
+  }
+
+  .mainContent,
+  .scheduleSection {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .header,
+  .meetings,
+  .workshops {
+    width: 100%; /* Full width for each section */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column; /* Stack sidebar and main content vertically */
+  }
+
+  .sidebar,
+  .mainContent {
+    width: 100%; /* Full width to use the available space */
+    padding: 10px; /* Reduce padding to save space */
+  }
+
+  .menu,
+  .header,
+  .meetings,
+  .workshops,
+  .birthdays {
+    width: 100%; /* Adjust widths for mobile view */
+  }
+
+  .weatherIcon,
+  .temperature,
+  .dateTime {
+    font-size: smaller; /* Reduce font size for compact view */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    display: none; /* Optional: hide sidebar on very small screens */
+  }
+
+  .header h1,
+  .meetings h2,
+  .workshops h2,
+  .birthdays h2 {
+    font-size: 20px; /* Smaller headings */
+  }
+
+  .eventDetails p,
+  .menu li,
+  .meetings li,
+  .workshops li {
+    font-size: 14px; /* Smaller text for details and lists */
+  }
+}

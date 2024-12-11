@@ -1,0 +1,87 @@
+:root {
+  background-color: #ffffff;
+
+  font-family: Arial;
+
+  /*Colours*/
+  --kpmg-blue: #00338d;
+
+  --medium-blue: #005ebb;
+
+  --light-blue: #0091da;
+
+  --violet: #483698;
+
+  --purple: #470a68;
+
+  --light-purple: #6d2077;
+
+  --green: #00a3a1;
+
+  --white: #fbfbfb;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.button {
+  background-color: var(--kpmg-blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  height: 3.75rem;
+  width: 11.3rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--medium-blue);
+}
+
+.alt-button {
+  border: 5px solid var(--kpmg-blue);
+  background-color: var(--white);
+  color: var(--kpmg-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  height: 3.75rem;
+  width: 11.3rem;
+  padding: 0 1rem 0 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alt-button:hover {
+  border: 5px solid var(--medium-blue);
+  background: var(--white);
+}
+
+.side-bar {
+  background-color: var(--kpmg-blue);
+  width: 10%;
+  height: 100%;
+}
+
+.datepicker {
+  display: flex;
+  border: 2px solid var(--kpmg-blue);
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-space {
+  margin-right: 8px;
+}

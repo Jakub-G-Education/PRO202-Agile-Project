@@ -1,0 +1,64 @@
+.edit-menu {
+  width: 60%;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.day {
+  margin-top: 5%;
+  flex: 0 0 48%;
+}
+
+.day label {
+  margin-left: 10%;
+}
+
+.day input {
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--kpmg-blue);
+  color: var(--kpmg-blue);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.arrow-back {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container, .button-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  gap: 20%;
+}
+
+.button-container{
+  gap: 15%;
+}
+
+.add-buttons-container, .add-button-container {
+  width: 50%;
+  display: flex;
+  gap: 10%;
+}
+
+.add-button-container {
+  gap: 2%;
+}
+
+.back-button-container {
+  width: 50%;
+}

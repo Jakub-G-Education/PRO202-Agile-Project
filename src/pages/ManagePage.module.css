@@ -1,0 +1,7 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-image: url("../../public/images/2.png");
+  background-size: cover;
+}
